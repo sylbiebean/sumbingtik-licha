@@ -1,0 +1,197 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+/* General Styles */
+body {
+    font-family: Monaco, monospace; /* Body text will use Monaco */
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Banner Styles */
+.banner {
+    background-image: url('your-banner-image.jpg'); /* Optional: Add your banner image here */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 30px 0;
+    color: white;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    font-family: 'Cinzel', serif; /* Cinzel for Municipality of Cainta */
+    color: black; /* Make the Municipality of Cainta text black */
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #0b387c;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Cinzel', serif; /* Cinzel for navigation items */
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Home Section */
+#home {
+    margin-top: 20px;
+}
+
+h1, h2 {
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* Festival Image Styling */
+.festival-image {
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Map Section */
+#google-map {
+    width: 100%;
+    height: 400px;
+    margin: 20px 0;
+}
+
+/* Event List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Event Section */
+#events .events-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Space between the event boxes */
+    margin: 0 auto;
+    width: 90%;
+}
+
+.event-box {
+    width: 48%; /* Set the width to 48% to fit two items per row */
+    background-color: #f0f0f0; /* Light grey background */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.event-image {
+    width: 100%;
+    height: auto;
+}
+
+.event-description {
+    padding: 15px;
+    text-align: center;
+}
+
+.event-box.grey {
+    background-color: #003366;
+    color: white;
+}
+
+.event-box.navy {
+    background-color: #003366;
+    color: white;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    padding: 20px 0;
+    background-color: #0b387c;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    #events .events-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event-box {
+        width: 90%; /* Make each event box 90% of the container width on smaller screens */
+    }
+}
+
+/* Logo and Title Styles */
+.logo-title {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the whole logo + text horizontally */
+    gap: 15px;
+}
+
+.logo-img {
+    width: 60px;
+    height: auto;
+}
